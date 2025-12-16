@@ -63,12 +63,38 @@ body {
 .link:active {
     transform: scale(0.97);
 }
+.snapchat {
+    background: #FFFC00;
+    color: #000000;
+}
+
+.snapchat i {
+    color: #000000;
+}
 
 .instagram { background: #E1306C; }
 .facebook  { background: #1877F2; }
 .x         { background: #000000; }
 .tiktok    { background: #010101; }
 .whatsapp  { background: #25D366; }
+.snapchat-box {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.snap-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.snapchat-box img {
+    width: 160px;
+    border-radius: 16px;
+    background: #ffffff;
+    padding: 8px;
+}
 
 .footer {
     margin-top: 22px;
@@ -116,4 +142,5 @@ body {
         color: #000000;
     }
 }
+
 
