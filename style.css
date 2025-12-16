@@ -12,6 +12,7 @@ body {
     align-items: center;
 }
 
+/* Card */
 .card {
     background: #ffffff;
     width: 92%;
@@ -40,6 +41,7 @@ body {
     margin-bottom: 22px;
 }
 
+/* Links */
 .link {
     display: flex;
     align-items: center;
@@ -63,6 +65,15 @@ body {
 .link:active {
     transform: scale(0.97);
 }
+
+/* Social Colors */
+.instagram { background: #E1306C; }
+.facebook  { background: #1877F2; }
+.x         { background: #000000; }
+.tiktok    { background: #010101; }
+.whatsapp  { background: #25D366; }
+
+/* Snapchat */
 .snapchat {
     background: #FFFC00;
     color: #000000;
@@ -72,11 +83,6 @@ body {
     color: #000000;
 }
 
-.instagram { background: #E1306C; }
-.facebook  { background: #1877F2; }
-.x         { background: #000000; }
-.tiktok    { background: #010101; }
-.whatsapp  { background: #25D366; }
 .snapchat-box {
     flex-direction: column;
     gap: 10px;
@@ -96,12 +102,14 @@ body {
     padding: 8px;
 }
 
+/* Footer */
 .footer {
     margin-top: 22px;
     font-size: 14px;
     color: #999;
 }
 
+/* Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -113,7 +121,7 @@ body {
     }
 }
 
-/* Dark mode */
+/* 🌙 Dark Mode */
 @media (prefers-color-scheme: dark) {
     body {
         background: #0f0f14;
@@ -127,9 +135,8 @@ body {
     .card p {
         color: #b5b5c5;
     }
-}
-/* Fix X & TikTok buttons in Dark Mode */
-@media (prefers-color-scheme: dark) {
+
+    /* Fix X & TikTok */
     .x,
     .tiktok {
         background: #ffffff;
@@ -141,9 +148,8 @@ body {
     .tiktok i {
         color: #000000;
     }
-}
 
-@media (prefers-color-scheme: dark) {
+    /* Snapchat */
     .snapchat {
         background: #ffeb3b;
         color: #000000;
@@ -153,5 +159,3 @@ body {
         background: #ffffff;
     }
 }
-
-
