@@ -4,8 +4,8 @@
 
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #6a11cb, #2575fc);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -14,11 +14,13 @@ body {
 
 .card {
     background: #ffffff;
-    width: 360px;
-    padding: 30px;
-    border-radius: 20px;
+    width: 92%;
+    max-width: 380px;
+    padding: 32px 26px;
+    border-radius: 24px;
     text-align: center;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+    animation: fadeIn 0.8s ease;
 }
 
 .card img {
@@ -35,38 +37,68 @@ body {
 
 .card p {
     color: #777;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .link {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    text-decoration: none;
-    padding: 14px;
-    margin: 10px 0;
-    border-radius: 12px;
+    gap: 12px;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 16px;
     color: white;
     font-weight: 600;
-    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.25s ease;
 }
 
 .link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.link:active {
+    transform: scale(0.97);
 }
 
 .instagram { background: #E1306C; }
 .facebook  { background: #1877F2; }
-.twitter   { background: #1DA1F2; }
-.youtube   { background: #FF0000; }
-.x        { background: #000000; }
-.tiktok   { background: #010101; }
-.whatsapp { background: #25D366; }
+.x         { background: #000000; }
+.tiktok    { background: #010101; }
+.whatsapp  { background: #25D366; }
 
 .footer {
-    margin-top: 20px;
-    font-size: 13px;
-    color: #aaa;
+    margin-top: 22px;
+    font-size: 14px;
+    color: #999;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #0f0f14;
+    }
+
+    .card {
+        background: #1c1c23;
+        color: #ffffff;
+    }
+
+    .card p {
+        color: #b5b5c5;
+    }
 }
