@@ -143,4 +143,15 @@ body {
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    .snapchat {
+        background: #ffeb3b;
+        color: #000000;
+    }
+
+    .snapchat-box img {
+        background: #ffffff;
+    }
+}
+
 
